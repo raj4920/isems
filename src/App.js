@@ -34,7 +34,7 @@ function App() {
       </nav>
       <nav className="navbar fixed-bottom navbar-expand-lg navbar-light bg-dark">
         <div className="navbar-brand mx-auto">
-          <h6 className="text-light">@2021-22 | Bhumik Patel and Raj Zalavadiya</h6>
+          <h6 className="text-light">@2021-22 | Bhumik Patel & Raj Zalavadiya</h6>
         </div>
       </nav>
     </>
