@@ -66,7 +66,6 @@ export default function Navbar(props) {
           </div>
         </div>
       </nav>
-
       <nav className="navbar fixed-bottom navbar-expand-lg navbar-light bg-dark">
         <div className="navbar-brand mx-auto">
           <h6 className="text-light">

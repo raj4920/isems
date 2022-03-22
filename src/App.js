@@ -1,5 +1,14 @@
 import "./App.css";
 import Navbar from "./Components/Navbar";
+import About from "./Components/About";
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Switch,
+  Route,
+  Link,
+} from "react-router-dom";
 
 function App() {
   return (
@@ -12,6 +21,13 @@ function App() {
         contactus="Contact Us"
         aboutus="About Us"
       />
+      {/* <Router>
+        <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+        </Switch>
+      </Router> */}
     </>
   );
 }
