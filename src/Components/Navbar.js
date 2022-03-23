@@ -28,14 +28,14 @@ export default function Navbar(props) {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <a className="nav-link" href="/login">
                   {props.signin}
                 </a>
               </li>
               <li className="nav-item">
                 <a
                   className="nav-link"
-                  href="/"
+                  href="/registration"
                   tabindex="-1"
                   aria-disabled="true"
                 >
@@ -45,7 +45,7 @@ export default function Navbar(props) {
               <li className="nav-item">
                 <a
                   className="nav-link"
-                  href="/"
+                  href="/contactus"
                   tabindex="-1"
                   aria-disabled="true"
                 >
@@ -55,7 +55,7 @@ export default function Navbar(props) {
               <li className="nav-item">
                 <a
                   className="nav-link"
-                  href="/"
+                  href="/about"
                   tabindex="-1"
                   aria-disabled="true"
                 >
