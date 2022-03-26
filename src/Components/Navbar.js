@@ -32,7 +32,7 @@ export default function Navbar(props) {
                   {props.signin}
                 </a>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a
                   className="nav-link"
                   href="/registration"
@@ -41,7 +41,7 @@ export default function Navbar(props) {
                 >
                   {props.signup}
                 </a>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <a
                   className="nav-link"

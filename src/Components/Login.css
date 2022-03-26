@@ -1,0 +1,30 @@
+.email {
+  margin: 0 auto;
+  float: none;
+  width: 80%;
+}
+
+.pwd {
+  margin: 0 auto;
+  float: none;
+  width: 80%;
+}
+
+.wrapper {
+  /* max-width: 500px; */
+  margin: 100px auto;
+  padding: 50px 45px;
+  box-shadow: 5px 25px 35px #3535356b;
+}
+
+.btn {
+  width: 50%;
+}
+
+.label {
+  text-align: left;
+}
+
+a:link {
+  text-decoration: none;
+}
