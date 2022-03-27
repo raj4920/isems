@@ -24,8 +24,7 @@ export default function Login() {
               </div>
             </div>
           </div>
-          <div className="btn btn-primary mt-3">Submit</div>
-
+          <button className="btn btn-primary mt-3">Submit</button>
           <div className="text-center" style={{ marginTop: "10px" }}>
             <a href="/login">Forget Password ?</a>
             <p>

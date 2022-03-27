@@ -1,12 +1,11 @@
 import React from "react";
-import PropTypes from "prop-types";
 
-export default function Navbar(props) {
+function SportsHeadDashBoard() {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-dark">
         <div className="container-fluid">
-          <h3 className="text-light">{props.title}</h3>
+          <h3 className="text-light">Sports Head Dashboard</h3>
           {/* <a className="navbar-brand " href="/">Institute Sport Event Management</a> */}
           <button
             className="navbar-toggler"
@@ -24,61 +23,45 @@ export default function Navbar(props) {
             <ul className="nav justify-content-end">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="/">
-                  {props.home}
+                  Add Game Details
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/login">
-                  {props.signin}
+                <a className="nav-link" href="/">
+                  Set Sport Schedule
                 </a>
               </li>
               <li className="nav-item">
-                <a
-                  className="nav-link"
-                  href="/contactus"
-                  tabindex="-1"
-                  aria-disabled="true"
-                >
-                  {props.contactus}
+                <a className="nav-link" href="/">
+                  Allocate Sports Coordinators
                 </a>
               </li>
               <li className="nav-item">
                 <a
                   className="nav-link"
-                  href="/about"
+                  href="/"
                   tabindex="-1"
                   aria-disabled="true"
                 >
-                  {props.aboutus}
+                  Generate Result
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="nav-link"
+                  href="/"
+                  tabindex="-1"
+                  aria-disabled="true"
+                >
+                  Generate Report
                 </a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      {/* <nav
-        className="navbar fixed-bottom navbar-expand-lg navbar-light bg-dark"
-        style={{ height: "40px" }}
-      >
-        <div className="navbar-brand mx-auto">
-          <h6 className="text-light">
-            @2021-22 | Bhumik Patel & Raj Zalavadiya
-          </h6>
-        </div>
-      </nav> */}
     </>
   );
 }
 
-Navbar.propTypes = {
-  title: PropTypes.string.isRequired,
-  home: PropTypes.string.isRequired,
-  signin: PropTypes.string.isRequired,
-  signup: PropTypes.string.isRequired,
-  contactus: PropTypes.string.isRequired,
-  aboutus: PropTypes.string.isRequired,
-};
-
-Navbar.defaultProps = {
-  title: "Set Title Here",
-};
+export default SportsHeadDashBoard;
