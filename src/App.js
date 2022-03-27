@@ -11,6 +11,8 @@ import StGameDetails from "./Components/StGameDetail";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import StudentDashBoard from "./Components/StudentDashBoard";
 import SporstHeadDashboard from "./Components/SportsHeadDashBoard";
+import StGameParticipation from "./Components/StGameParticipation";
+import SportCoordinatorDashboard from "./Components/SportCoordinatorDashboard";
 
 function App() {
   return (
@@ -18,7 +20,8 @@ function App() {
       <Router>
         <React.Fragment>
           {window.location.pathname === "/studentdashboard" ||
-          window.location.pathname === "/sportsheaddashboard" ? null : (
+          window.location.pathname === "/sportsheaddashboard" ||
+          window.location.pathname === "/sportcoordinatordashboard" ? null : (
             <Navbar
               title="Institute Sport Event Management"
               home="Home"
@@ -44,7 +47,12 @@ function App() {
               path="/sportsheaddashboard"
               element={<SporstHeadDashboard />}
             ></Route>
+            <Route
+              path="/sportcoordinatordashboard"
+              element={<SportCoordinatorDashboard />}
+            ></Route>
             <Route path="/gd" element={<StGameDetails />}></Route>
+            <Route path="/gp" element={<StGameParticipation />}></Route>
             <Route path="/" element={<ImageSlider slides={SliderData} />} />
           </Routes>
         </div>
