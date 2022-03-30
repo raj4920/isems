@@ -1,6 +1,8 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import StGameDetails from "./StGameDetail";
+import { Link } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+// import StGameDetails from "./StGameDetail";
+// import StGameParticipation from "./StGameParticipation";
 
 function StudentDashBoard() {
   return (
@@ -23,50 +25,50 @@ function StudentDashBoard() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0"></ul>
             <ul className="nav justify-content-end">
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="/sdh">
                   Home
                 </a>
-              </li>
+              </li> */}
               <li className="nav-item">
-                <a className="nav-link" href="/gd">
+                <Link className="nav-link" to="/studentdashboard/gd">
                   Game Details
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/gp">
+                <Link className="nav-link" to="/studentdashboard/gp">
                   Game Participation
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
                   className="nav-link"
-                  href="/grs"
+                  to="/studentdashboard/grs"
                   tabindex="-1"
                   aria-disabled="true"
                 >
                   Game Result
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
                   className="nav-link"
-                  href="/gc"
+                  to="/studentdashboard/gc"
                   tabindex="-1"
                   aria-disabled="true"
                 >
                   Game Coordinators
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
                   className="nav-link"
-                  href="/gr"
+                  to="/studentdashboard/gr"
                   tabindex="-1"
                   aria-disabled="true"
                 >
                   Game Rules
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

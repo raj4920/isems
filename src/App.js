@@ -13,6 +13,9 @@ import StudentDashBoard from "./Components/StudentDashBoard";
 import SporstHeadDashboard from "./Components/SportsHeadDashBoard";
 import StGameParticipation from "./Components/StGameParticipation";
 import SportCoordinatorDashboard from "./Components/SportCoordinatorDashboard";
+import StGameResult from "./Components/StGameResult";
+import StGameCoordinator from "./Components/StGameCoordinator";
+import StGameRules from "./Components/StGameRules";
 
 function App() {
   return (
@@ -20,8 +23,12 @@ function App() {
       <Router>
         <React.Fragment>
           {window.location.pathname === "/studentdashboard" ||
-          window.location.pathname === "/sportsheaddashboard" ||
-          window.location.pathname === "/sportcoordinatordashboard" ? null : (
+          window.location.pathname === "/studentdashboard/gd" ||
+          window.location.pathname === "/studentdashboard/gp" ||
+          window.location.pathname === "/studentdashboard/grs" ||
+          window.location.pathname === "/studentdashboard/gc" ||
+          window.location.pathname === "/studentdashboard/gr" ||
+          window.location.pathname === "/sportsheaddashboard" ? null : (
             <Navbar
               title="Institute Sport Event Management"
               home="Home"
@@ -39,10 +46,33 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/registration" element={<Registration />} />
             <Route path="/contactus" element={<ContactUs />} />
+
+            {/* Student Dashboard Routes */}
             <Route
               path="/studentdashboard"
               element={<StudentDashBoard />}
             ></Route>
+            <Route
+              path="/studentdashboard/gd"
+              element={<StGameDetails />}
+            ></Route>
+            <Route
+              path="/studentdashboard/gp"
+              element={<StGameParticipation />}
+            ></Route>
+            <Route
+              path="/studentdashboard/grs"
+              element={<StGameResult />}
+            ></Route>
+            <Route
+              path="/studentdashboard/gc"
+              element={<StGameCoordinator />}
+            ></Route>
+            <Route
+              path="/studentdashboard/gr"
+              element={<StGameRules />}
+            ></Route>
+
             <Route
               path="/sportsheaddashboard"
               element={<SporstHeadDashboard />}
@@ -51,8 +81,6 @@ function App() {
               path="/sportcoordinatordashboard"
               element={<SportCoordinatorDashboard />}
             ></Route>
-            <Route path="/gd" element={<StGameDetails />}></Route>
-            <Route path="/gp" element={<StGameParticipation />}></Route>
             <Route path="/" element={<ImageSlider slides={SliderData} />} />
           </Routes>
         </div>

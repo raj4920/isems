@@ -1,13 +1,13 @@
 import React from "react";
 import StudentDashBoard from "./StudentDashBoard";
 
-function StGameDetail() {
+function StGameCoordinator() {
   return (
     <div>
       <StudentDashBoard />
-      <h1>Student Game Details</h1>
+      <h1>Student Game Coordinator</h1>
     </div>
   );
 }
 
-export default StGameDetail;
+export default StGameCoordinator;

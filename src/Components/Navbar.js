@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 export default function Navbar(props) {
   return (
@@ -23,34 +24,34 @@ export default function Navbar(props) {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0"></ul>
             <ul className="nav justify-content-end">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
+                <Link className="nav-link active" aria-current="page" to="/">
                   {props.home}
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/login">
+                <Link className="nav-link" to="/login">
                   {props.signin}
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
                   className="nav-link"
-                  href="/contactus"
+                  to="/contactus"
                   tabindex="-1"
                   aria-disabled="true"
                 >
                   {props.contactus}
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
                   className="nav-link"
-                  href="/about"
+                  to="/about"
                   tabindex="-1"
                   aria-disabled="true"
                 >
                   {props.aboutus}
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

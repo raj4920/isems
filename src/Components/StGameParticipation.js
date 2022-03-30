@@ -1,12 +1,14 @@
 import { findAllByAltText } from "@testing-library/react";
 import React, { useState } from "react";
 import "./StGameParticipation.css";
+import StudentDashBoard from "./StudentDashBoard";
 
 function StGameParticipation() {
   const [visible, setVisible] = useState(false);
 
   return (
     <>
+      <StudentDashBoard />
       <div className="reg">
         <div className="wrapper rounded bg-white">
           <div className="h3">Game Participation</div>
