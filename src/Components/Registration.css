@@ -162,7 +162,7 @@ body::-webkit-scrollbar {
   text-align: left;
 }
 
-.wrapper {
+/* .wrapper {
   background-image: linear-gradient(
     to right top,
     #d16ba5,
@@ -178,4 +178,4 @@ body::-webkit-scrollbar {
     #46eefa,
     #5ffbf1
   );
-}
+} */

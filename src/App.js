@@ -19,6 +19,8 @@ import StGameRules from "./Components/StGameRules";
 import DirectorDashBoard from "./Components/DirectorDashBoard";
 import GameSchedule from "./Components/GameSchedule";
 import DFacultyDetails from "./Components/DFacultyDetails";
+import DGameReport from "./Components/DGameReport";
+import DGameSchedule from "./Components/DGameSchedule";
 
 function App() {
   return (
@@ -35,7 +37,9 @@ function App() {
           window.location.pathname === "/sportsheaddashboard" ||
           window.location.pathname === "/sportcoordinatordashboard" ||
           window.location.pathname === "/directordashboard" ||
-          window.location.pathname === "/directordashboard/vfd" ? null : (
+          window.location.pathname === "/directordashboard/vfd" ||
+          window.location.pathname === "/directordashboard/gr" ||
+          window.location.pathname === "/directordashboard/vss" ? null : (
             <Navbar
               title="Institute Sport Event Management"
               home="Home"
@@ -104,6 +108,14 @@ function App() {
             <Route
               path="/directordashboard/vfd"
               element={<DFacultyDetails />}
+            ></Route>
+            <Route
+              path="/directordashboard/gr"
+              element={<DGameReport />}
+            ></Route>
+            <Route
+              path="/directordashboard/vss"
+              element={<DGameSchedule />}
             ></Route>
             <Route path="/" element={<ImageSlider slides={SliderData} />} />
           </Routes>
