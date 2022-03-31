@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function SportsHeadDashBoard() {
   return (
@@ -6,7 +7,7 @@ function SportsHeadDashBoard() {
       <nav className="navbar navbar-expand-lg navbar-light bg-dark">
         <div className="container-fluid">
           <h3 className="text-light">Sports Head Dashboard</h3>
-          {/* <a className="navbar-brand " href="/">Institute Sport Event Management</a> */}
+          {/* <Link className="navbar-brand " to="/">Institute Sport Event Management</Link> */}
           <button
             className="navbar-toggler"
             type="button"
@@ -22,39 +23,49 @@ function SportsHeadDashBoard() {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0"></ul>
             <ul className="nav justify-content-end">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
+                <Link className="nav-link active" aria-current="page" to="/">
                   Add Game Details
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <Link className="nav-link" to="/">
                   Set Sport Schedule
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <Link className="nav-link" to="/">
                   Allocate Sports Coordinators
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
                   className="nav-link"
-                  href="/"
+                  to="/"
                   tabindex="-1"
                   aria-disabled="true"
                 >
                   Generate Result
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
                   className="nav-link"
-                  href="/"
+                  to="/"
                   tabindex="-1"
                   aria-disabled="true"
                 >
                   Generate Report
-                </a>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  className="nav-link"
+                  to=""
+                  tabindex="-1"
+                  aria-disabled="true"
+                >
+                  Logout
+                </Link>
               </li>
             </ul>
           </div>

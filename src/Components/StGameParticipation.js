@@ -1,4 +1,3 @@
-import { findAllByAltText } from "@testing-library/react";
 import React, { useState } from "react";
 import "./StGameParticipation.css";
 import StudentDashBoard from "./StudentDashBoard";

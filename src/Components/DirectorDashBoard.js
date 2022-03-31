@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function SportCoordinatorDashboard() {
+function DirectorDashBoard() {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-dark">
         <div className="container-fluid">
-          <h3 className="text-light">Sport Coordinator Dashboard</h3>
+          <h3 className="text-light">Director Dashboard</h3>
           {/* <a className="navbar-brand " href="/">Institute Sport Event Management</a> */}
           <button
             className="navbar-toggler"
@@ -23,32 +23,23 @@ function SportCoordinatorDashboard() {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0"></ul>
             <ul className="nav justify-content-end">
               <li className="nav-item">
-                <Link
-                  className="nav-link active"
-                  aria-current="page"
-                  to="/sportcoordinatordashboard/pd"
-                >
-                  Participant Details
+                <Link className="nav-link" to="/directordashboard/vfd">
+                  View Faculty Details
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/sportcoordinatordashboard/as">
-                  Add Score
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/sportcoordinatordashboard/ar">
-                  Annous Result
+                <Link className="nav-link" to="/directordashboard/gr">
+                  Generate Report
                 </Link>
               </li>
               <li className="nav-item">
                 <Link
                   className="nav-link"
-                  to="/sportcoordinatordashboard/grs"
+                  to="/directordashboard/vss"
                   tabindex="-1"
                   aria-disabled="true"
                 >
-                  Game Rules
+                  View Sport Schedule
                 </Link>
               </li>
               <li className="nav-item">
@@ -69,4 +60,4 @@ function SportCoordinatorDashboard() {
   );
 }
 
-export default SportCoordinatorDashboard;
+export default DirectorDashBoard;

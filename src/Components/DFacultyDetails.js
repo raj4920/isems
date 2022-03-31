@@ -1,11 +1,11 @@
 import React from "react";
-import StudentDashBoard from "./StudentDashBoard";
-//import { Link } from "react-router-dom";
+import DirectorDashBoard from "./DirectorDashBoard";
+import { Link } from "react-router-dom";
 
-function StGameCoordinator() {
+function DFacultyDetails() {
   return (
     <>
-      <StudentDashBoard />
+      <DirectorDashBoard />
       <div class="container-fluid" style={{ marginTop: "30px" }}>
         <h1>Game Coordinators</h1>
         <div class="row" style={{ marginTop: "30px" }}>
@@ -20,7 +20,7 @@ function StGameCoordinator() {
                     <th>Mobile</th>
                     <th>Email</th>
                     <th>Game Name</th>
-                    {/* <th>Options</th> */}
+                    <th>Select Sports Head</th>
                   </thead>
                   <tbody>
                     <tr>
@@ -29,27 +29,14 @@ function StGameCoordinator() {
                       <td>9714995568</td>
                       <td>raj@gmail.com</td>
                       <td>Cricket</td>
-                    </tr>
-                    <tr>
-                      <td>Raj</td>
-                      <td>Zalavadiya</td>
-                      <td>9714995568</td>
-                      <td>raj@gmail.com</td>
-                      <td>Cricket</td>
-                    </tr>
-                    <tr>
-                      <td>Raj</td>
-                      <td>Zalavadiya</td>
-                      <td>9714995568</td>
-                      <td>raj@gmail.com</td>
-                      <td>Cricket</td>
-                    </tr>
-                    <tr>
-                      <td>Raj</td>
-                      <td>Zalavadiya</td>
-                      <td>9714995568</td>
-                      <td>raj@gmail.com</td>
-                      <td>Cricket</td>
+                      <td>
+                        <Link
+                          className="nav-link active"
+                          to="/directordashboard"
+                        >
+                          Allocate
+                        </Link>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -63,4 +50,4 @@ function StGameCoordinator() {
   );
 }
 
-export default StGameCoordinator;
+export default DFacultyDetails;

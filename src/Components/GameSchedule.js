@@ -1,12 +1,12 @@
 import React from "react";
 import StudentDashBoard from "./StudentDashBoard";
 
-function StGameDetail() {
+function GameSchedule() {
   return (
     <>
       <StudentDashBoard />
       <div class="container-fluid" style={{ marginTop: "30px" }}>
-        <h1> Game Details</h1>
+        <h1> Game Schedule</h1>
         <div class="row" style={{ marginTop: "30px" }}>
           <div class="container">
             <div class="row">
@@ -15,17 +15,17 @@ function StGameDetail() {
                 <table id="example" class="table">
                   <thead style={{ fontSize: "18px" }}>
                     <th>Game Name</th>
-                    <th>Game Type</th>
-                    <th>Game Location</th>
-                    <th>Total Player</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Location</th>
                     {/* <th>Options</th> */}
                   </thead>
                   <tbody>
                     <tr>
                       <td>Cricket</td>
-                      <td>Team Game</td>
-                      <td>Out Door</td>
-                      <td>15</td>
+                      <td>12/12/2022</td>
+                      <td>9 AM on words</td>
+                      <td>Cricket Ground</td>
                     </tr>
                   </tbody>
                 </table>
@@ -39,4 +39,4 @@ function StGameDetail() {
   );
 }
 
-export default StGameDetail;
+export default GameSchedule;

@@ -36,11 +36,16 @@ function StudentDashBoard() {
                 </Link>
               </li>
               <li className="nav-item">
+                <Link className="nav-link" to="/studentdashboard/gs">
+                  Game Schedule
+                </Link>
+              </li>
+              <li className="nav-item">
                 <Link className="nav-link" to="/studentdashboard/gp">
                   Game Participation
                 </Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link
                   className="nav-link"
                   to="/studentdashboard/grs"
@@ -49,7 +54,7 @@ function StudentDashBoard() {
                 >
                   Game Result
                 </Link>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <Link
                   className="nav-link"
@@ -68,6 +73,16 @@ function StudentDashBoard() {
                   aria-disabled="true"
                 >
                   Game Rules
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  className="nav-link"
+                  to=""
+                  tabindex="-1"
+                  aria-disabled="true"
+                >
+                  Logout
                 </Link>
               </li>
             </ul>
