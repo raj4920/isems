@@ -7,7 +7,7 @@ function DFacultyDetails() {
     <>
       <DirectorDashBoard />
       <div class="container-fluid" style={{ marginTop: "30px" }}>
-        <h1>Game Coordinators</h1>
+        <h1>Select Sport Head</h1>
         <div class="row" style={{ marginTop: "30px" }}>
           <div class="container">
             <div class="row">

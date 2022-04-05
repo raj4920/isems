@@ -14,7 +14,7 @@ function StGameParticipation() {
           <div className="form">
             <div className="row">
               <div className="col-md-6 mt-md-0 mt-3">
-                <label className="label">Gender</label>
+                <label className="label">Game Type</label>
                 <div className="d-flex align-items-center mt-2">
                   <label className="option">
                     <input
@@ -38,7 +38,7 @@ function StGameParticipation() {
               </div>
 
               <div className="col-md-6 mt-md-0 mt-3">
-                <label className="label">Semester & Division</label>
+                <label className="label">Select Game</label>
                 <div className="d-flex align-items-center mt-2">
                   <select id="gname" required>
                     <option value="" selected hidden>

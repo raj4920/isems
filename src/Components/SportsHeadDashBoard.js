@@ -23,24 +23,28 @@ function SportsHeadDashBoard() {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0"></ul>
             <ul className="nav justify-content-end">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">
+                <Link
+                  className="nav-link active"
+                  aria-current="page"
+                  to="/sportsheaddashboard/agd"
+                >
                   Add Game Details
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/">
+                <Link className="nav-link" to="/sportsheaddashboard/sss">
                   Set Sport Schedule
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/">
+                <Link className="nav-link" to="/sportsheaddashboard/asc">
                   Allocate Sports Coordinators
                 </Link>
               </li>
               <li className="nav-item">
                 <Link
                   className="nav-link"
-                  to="/"
+                  to="/sportsheaddashboard/gres"
                   tabindex="-1"
                   aria-disabled="true"
                 >
@@ -50,7 +54,7 @@ function SportsHeadDashBoard() {
               <li className="nav-item">
                 <Link
                   className="nav-link"
-                  to="/"
+                  to="/sportsheaddashboard/grp"
                   tabindex="-1"
                   aria-disabled="true"
                 >
