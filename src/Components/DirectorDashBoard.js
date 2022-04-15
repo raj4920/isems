@@ -23,6 +23,11 @@ function DirectorDashBoard() {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0"></ul>
             <ul className="nav justify-content-end">
               <li className="nav-item">
+                <Link className="nav-link" to="/directordashboard/af">
+                  Add Faculty
+                </Link>
+              </li>
+              <li className="nav-item">
                 <Link className="nav-link" to="/directordashboard/vfd">
                   View Faculty Details
                 </Link>
