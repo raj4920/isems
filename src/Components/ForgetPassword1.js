@@ -9,7 +9,7 @@ function ForgetPassword1() {
             className="wrapper rounded bg-white"
             style={{ maxWidth: "500px", marginTop: "50px" }}
           >
-            <div className="h3">Change Password</div>
+            <div className="h3">Forget Password</div>
             <div className="form">
               <div className="row">
                 <div className="emailid">

@@ -74,6 +74,14 @@ function StGameParticipation() {
                     <input
                       type="text"
                       className="form-control"
+                      placeholder="Enter team name"
+                      required
+                    />
+                  </div>
+                  <div className="col-md-6 mt-md-0 mt-3">
+                    <input
+                      type="text"
+                      className="form-control"
                       placeholder="Member 2 Enrollment No."
                       required
                     />
@@ -155,30 +163,6 @@ function StGameParticipation() {
                       type="text"
                       className="form-control"
                       placeholder="Member 12 Enrollment No."
-                      required
-                    />
-                  </div>
-                  <div className="col-md-6 mt-md-0 mt-3">
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Member 13 Enrollment No."
-                      required
-                    />
-                  </div>
-                  <div className="col-md-6 mt-md-0 mt-3">
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Member 14 Enrollment No."
-                      required
-                    />
-                  </div>
-                  <div className="col-md-6 mt-md-0 mt-3">
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Member 15 Enrollment No."
                       required
                     />
                   </div>
