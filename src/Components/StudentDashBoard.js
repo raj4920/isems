@@ -78,6 +78,16 @@ function StudentDashBoard() {
               <li className="nav-item">
                 <Link
                   className="nav-link"
+                  to="/changepassword"
+                  tabindex="-1"
+                  aria-disabled="true"
+                >
+                  Change Password
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  className="nav-link"
                   to=""
                   tabindex="-1"
                   aria-disabled="true"

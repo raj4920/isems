@@ -1,8 +1,6 @@
 import React from "react";
-import "./Login.css";
-import { Link } from "react-router-dom";
 
-export default function Login() {
+function ForgetPassword2() {
   return (
     <>
       <div className="reg">
@@ -11,31 +9,27 @@ export default function Login() {
             className="wrapper rounded bg-white"
             style={{ maxWidth: "500px", marginTop: "50px" }}
           >
-            <div className="h3">Login Form</div>
+            <div className="h3">Change Password</div>
             <div className="form">
               <div className="row">
-                <div className="email">
-                  <label className="label">Email Id</label>
+                <div className="npwd1">
+                  <label className="label">New Password</label>
                   <input type="text" className="form-control" required />
                 </div>
               </div>
               <div className="row">
-                <div className="pwd">
-                  <label className="label">Password</label>
+                <div className="npwd2">
+                  <label className="label">Conform Password</label>
                   <input type="text" className="form-control" required />
                 </div>
               </div>
             </div>
             <button className="btn btn-primary mt-3">Submit</button>
-            <div className="text-center" style={{ marginTop: "10px" }}>
-              <a href="/forgetpassword1">Forget Password ?</a>
-              <p>
-                Not a member ?<Link to="/Registration">Register</Link>
-              </p>
-            </div>
           </div>
         </form>
       </div>
     </>
   );
 }
+
+export default ForgetPassword2;

@@ -27,11 +27,11 @@ function DirectorDashBoard() {
                   Add Faculty
                 </Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link className="nav-link" to="/directordashboard/vfd">
                   View Faculty Details
                 </Link>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <Link className="nav-link" to="/directordashboard/gr">
                   Generate Report
@@ -47,16 +47,17 @@ function DirectorDashBoard() {
                   View Sport Schedule
                 </Link>
               </li>
-              {/* <li className="nav-item">
+
+              <li className="nav-item">
                 <Link
                   className="nav-link"
-                  to="/"
+                  to=""
                   tabindex="-1"
                   aria-disabled="true"
                 >
                   Logout
                 </Link>
-              </li> */}
+              </li>
             </ul>
           </div>
         </div>

@@ -28,6 +28,10 @@ import SphGenerateResult from "./Components/SphGenerateResult";
 import SphGenerateReport from "./Components/SphGenerateReport";
 import ScParticipantDetails from "./Components/ScParticipantDetails";
 import ScAddScore from "./Components/ScAddScore";
+import DAddFaculty from "./Components/DAddFaculty";
+import ChangePassword from "./Components/ChangePassword";
+import ForgetPassword1 from "./Components/ForgetPassword1";
+import ForgetPassword2 from "./Components/ForgetPassword2";
 
 function App() {
   return (
@@ -41,6 +45,7 @@ function App() {
           window.location.pathname === "/studentdashboard/gc" ||
           window.location.pathname === "/studentdashboard/gr" ||
           window.location.pathname === "/studentdashboard/gs" ||
+          window.location.pathname === "/changepassword" ||
           window.location.pathname === "/sportsheaddashboard" ||
           window.location.pathname === "/sportsheaddashboard/agd" ||
           window.location.pathname === "/sportsheaddashboard/sss" ||
@@ -53,8 +58,8 @@ function App() {
           window.location.pathname === "/sportsheaddashboard/gres" ||
           window.location.pathname === "/sportsheaddashboard/grp" ||
           window.location.pathname === "/sportcoordinatordashboard/pd" ||
-          window.location.pathname ===
-            "/sportcoordinatordashboard/as" ? null : (
+          window.location.pathname === "/sportcoordinatordashboard/as" ||
+          window.location.pathname === "/directordashboard/af" ? null : (
             <Navbar
               title="Institute Sport Event Management"
               home="Home"
@@ -72,6 +77,9 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/registration" element={<Registration />} />
             <Route path="/contactus" element={<ContactUs />} />
+            <Route path="/changepassword" element={<ChangePassword />} />
+            <Route path="/forgetpassword1" element={<ForgetPassword1 />} />
+            <Route path="/forgetpassword2" element={<ForgetPassword2 />} />
 
             {/* Student Dashboard Routes */}
             <Route path="/studentdashboard" element={<StudentDashBoard />} />
@@ -134,6 +142,10 @@ function App() {
               path="/directordashboard/vfd"
               element={<DFacultyDetails />}
             />
+            <Route
+              path="/directordashboard/af"
+              element={<DAddFaculty />}
+            ></Route>
             <Route path="/directordashboard/gr" element={<DGameReport />} />
             <Route path="/directordashboard/vss" element={<DGameSchedule />} />
             <Route path="/" element={<ImageSlider slides={SliderData} />} />
